@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Todo</title>
+  <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+  
+  <div id="app">
+    <div class="wrapper mt-5 mb-5">
+      <h2 class="text-center mb-4">My Crazy TODO)</h2>
+
+      <div id="todo-list" class="pl-2 pr-2">
+
+        <!-- todo-items -->
+
+      </div>
+
+      <div id="todo-controlls" class="pl-2 pr-2 row no-gutters justify-content-between align-items-center">
+        <button type="button" class="btn btn-info" id="btn-new-task">Новая задача</button>
+        <div class="form-check ml-2 mr-2">
+          <input class="form-check-input" type="checkbox" id="priority-checkbox">
+          <label class="form-check-label" for="priority-checkbox">
+            По приоритету
+          </label>
+        </div>
+        <select class="form-control form-control-sm w-auto" id="filter-selector">
+        </select>
+      </div>
+
+      <form class="pl-2 pr-2 d-none" id="todo-form">
+        <div class="form-group">
+          <label for="form-header-title">Заголовок задачи</label>
+          <input name="headerTask" type="text" class="form-control" id="form-header-title">
+        </div>
+        <div class="form-group">
+          <label for="form-header-name">Название проекта</label>
+          <input name="nameProject" type="text" class="form-control" id="form-header-name">
+        </div>
+        <div class="form-group">
+          <label for="form-header-priority">Приоритет</label>
+          <select name="priority" class="form-control form-control-sm w-100" id="form-header-priority">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Описание</label>
+          <textarea name="description" class="form-control" id="exampleFormControlTextarea1"></textarea>
+        </div>
+        
+        <button type="submit" class="btn btn-success">Сохранить</button>
+        <button type="button" class="btn btn-warning ml-3" id="btn-cancle-add-new-task">Отмена</button>
+      </form>
+
+    </div>
+  </div>
+
+  <script src="./assets/scripts/bundle.js"></script>
+</body>
+</html>
